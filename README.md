@@ -2,6 +2,11 @@
 
 An interactive dashboard analyzing all 104 matches of the 2026 FIFA World Cup — standings, filterable match results, and live charts, built with vanilla JavaScript.
 
+**[Live Demo](https://yeshi30.github.io/worldcup2026-dashboard/)**
+
+![Dashboard demo](demo.gif)
+
+
 ## Features
 - Sortable standings table with team flags
 - Filterable match list by round and team search
