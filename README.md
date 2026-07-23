@@ -4,7 +4,7 @@ An interactive dashboard analyzing all 104 matches of the 2026 FIFA World Cup â€
 
 **[Live Demo](https://yeshi30.github.io/worldcup2026-dashboard/)**
 
-<img src="demo.gif" width="800">
+<img src="demo.gif">
 
 ## Features
 - Sortable standings table with team flags
