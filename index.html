@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>World Cup 2026 Dashboard</title>
+</head>
+
+<body>
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow">Match Analytics</p>
+    <h1>World Cup 2026 Dashboard</h1>
+    <p class="hero-subtitle">An interactive read of every result so far — standings, form, and the moments that decided them.</p>
+  </header>
+
+  <section class="stats">
+
+    <div class="stat-card">
+      <div class="stat-number">100</div>
+      <div class="stat-label">Matches Played</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-number">292</div>
+      <div class="stat-label">Total Goals</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-number">2.92</div>
+      <div class="stat-label">Goals / Match</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-number" style="color: white;">4</div>
+      <div class="stat-label">Penalty Shootouts</div>
+    </div>
+
+  </section>
+ 
+<section class="panel">
+  <h2>Standings</h2>
+  <table class="standings-table">
+    <thead>
+      <tr>
+        <th>Team</th>
+        <th>P</th>
+        <th>W</th>
+        <th>D</th>
+        <th>L</th>
+        <th>GF</th>
+        <th>GA</th>
+        <th>GD</th>
+        <th>Pts</th>
+      </tr>
+    </thead>
+    <tbody id="standingsBody">
+      <!-- rows will go here -->
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <div class="matches-header">
+    <h2>Matches</h2>
+    <input id="teamSearch" type="text" placeholder="Filter by team..." class="search-input">
+  </div>
+  <div id="roundFilters" class="round-filters">
+    <!-- filter buttons will go here -->
+  </div>
+  <div id="matchList" class="match-list">
+    <!-- match tiles will go here -->
+  </div>
+</section>
+
+<section class="panel">
+  <h2>Average Goals by Round</h2>
+  <div style="position: relative; height: 280px;">
+    <canvas id="goalsChart"></canvas>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+ 
+
+</body>
+</html>
